@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario práctica</title>
+</head>
+<body>
+<form action="" method="">
+    <p>
+        <label for="nom">Nombre</label>
+        <input type="text" name="nombre">
+    </p>
+    <p>
+        <input type="text" name="apellido" placeholder="apellido"/>
+    </p>
+    <p>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass">
+    </p>
+    <label for="sexo">Sexo</label>
+    <ul>
+        <li>
+            <input type="radio" name="sexo" value="hombre">
+            <label for="">hombre</label>
+        </li>
+        <li>
+            <input type="radio" name="sexo" value="mujer">
+            <label for="">mujer</label>
+        </li>
+    </ul>
+    <label for="">Hobbies</label>
+    <ul>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="bailar" id="bailar">
+            <label for="bailar">Bailar</label>
+        </li>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="nadar" id="nadar">
+            <label for="nadar">Nadar</label>
+        </li>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="cantar" id="cantar">
+            <label for="cantar">Cantar</label>
+        </li>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="correr" id="correr">
+            <label for="correr">Correr</label>
+        </li>
+    </ul>
+    <p>
+        <label for="titulo">Título</label>
+        <select name="título" id="">
+            <option value="primario">Primario</option>
+            <option value="secundario">Secundario</option>
+            <option value="terciario">Terciario</option>
+            <option value="universitario">Universitario</option>
+        </select>
+    </p>
+    <p>
+        <label for="comentarios">Comentarios</label>
+        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Borrar"/>
+    </p>
+</form>
+</body>
+</html>
