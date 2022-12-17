@@ -15,10 +15,20 @@ p{
 
 h4{
   text-transform: capitalize;
-  color: rgb(168, 226, 240);
+  color: rgb(7, 80, 99);
 }
 
 .edad{
   text-transform: uppercase;
   background-color: rgb(168, 223, 235);
+}
+
+#disfruto{
+  color: rgb(7, 176, 119);
+  font-size: larger;
+}
+
+#mifoto{
+  width: 400px;
+  height: auto;
 }
