@@ -1,0 +1,24 @@
+h1{
+  color: red;
+  text-transform: uppercase;
+}
+
+h2{
+  color: blue;
+  font-style: italic;
+}
+
+p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-indent: 40px;
+}
+
+h4{
+  text-transform: capitalize;
+  color: rgb(168, 226, 240);
+}
+
+.edad{
+  text-transform: uppercase;
+  background-color: rgb(168, 223, 235);
+}
