@@ -1,34 +1,52 @@
-h1{
+/* 
+font-family: 'Prosto One', cursive;
+*/
+
+* {
+  background: rgb(246, 56, 169);
+  background: linear-gradient(
+    106deg,
+    rgba(246, 56, 169, 1) 0%,
+    rgba(36, 244, 213, 0.9392799356070554) 47%,
+    rgba(0, 109, 255, 1) 100%
+  );
+}
+
+h1 {
+  font-family: "Prosto One", cursive;
   color: red;
   text-transform: uppercase;
 }
 
-h2{
+h2 {
   color: blue;
   font-style: italic;
 }
 
-p{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-indent: 40px;
 }
 
-h4{
+h4 {
   text-transform: capitalize;
   color: rgb(7, 80, 99);
 }
 
-.edad{
+.edad {
   text-transform: uppercase;
   background-color: rgb(168, 223, 235);
 }
 
-#disfruto{
-  color: rgb(7, 176, 119);
+#disfruto {
+  color: rgb(32, 7, 176);
   font-size: larger;
 }
 
-#mifoto{
+#mifoto {
+  border: 28px ridge #bb0ef3;
+  background: #ffffff;
   width: 400px;
   height: auto;
 }
