@@ -1,0 +1,20 @@
+.caja {
+  width: 250px;
+  height: 250px;
+  background: rgb(156, 246, 56);
+  background: linear-gradient(
+    193deg,
+    rgba(156, 246, 56, 1) 0%,
+    rgba(244, 241, 36, 0.9392799356070554) 35%,
+    rgba(0, 255, 204, 1) 100%
+  );
+  box-shadow: 5px 10px 20px grey;
+  /* eje x - eje y - blur - color
+  para que la sombra vaya a un lado u otro se pone signo negativo o positivo */
+  border-top: 10px double #ff6550;
+  border-right: 10px double #ff6550;
+  border-bottom: 10px double #ff6550;
+  border-left: 10px double #ff6550;
+  padding: 30px;
+  border-radius: 8%;
+}
