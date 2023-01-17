@@ -1,0 +1,29 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  cursor: cell;
+}
+
+div:hover {
+  background-color: rgb(249, 179, 30);
+}
+
+/* :first-child y :last-child */
+/* :nth-child()  */
+
+span {
+  background-color: yellow;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* span::after {
+  content: "después";
+  background-color: rgb(232, 103, 103);
+} */
+
+/* span::before {
+  content: "antes";
+  background-color: rgb(143, 143, 240);
+} */
