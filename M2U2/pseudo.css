@@ -18,6 +18,9 @@ span {
   padding: 10px;
 }
 
+/* ver qué pasa si saco los comentarios de 
+span::after y span::before  */
+
 /* span::after {
   content: "después";
   background-color: rgb(232, 103, 103);

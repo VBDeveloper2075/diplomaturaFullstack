@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+#texto {
+  background-color: yellow;
+  margin-top: 65px;
+}
+
+#fijo {
+  position: fixed;
+  top: 0;
+  background-color: #cccc;
+  height: 60px;
+  width: 100%; /*le damos forma de botonera-- position fixed para que no se vaya nunca de la pantalla*/
+}

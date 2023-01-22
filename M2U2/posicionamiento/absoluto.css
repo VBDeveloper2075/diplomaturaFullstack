@@ -1,0 +1,45 @@
+#contenedor {
+  height: 500px;
+  width: 400px;
+  background-color: grey;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#verde {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* le hace caso al primer padre que tiene posicionamiento relativo */
+
+  height: 40px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: aquamarine;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#celeste {
+  height: 40px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(138, 231, 248);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#amarillo {
+  height: 40px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(245, 245, 102);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
