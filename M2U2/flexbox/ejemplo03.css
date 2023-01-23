@@ -1,0 +1,16 @@
+.contenedor {
+  display: inline-flex;
+  /* flex-wrap: nowrap; */
+  /* como la calculadora */
+  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap; */
+  background-color: blue;
+}
+
+.item {
+  background-color: #ccc;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  font-size: 30px;
+}

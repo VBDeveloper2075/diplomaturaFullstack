@@ -1,0 +1,13 @@
+.contenedor {
+  display: flex;
+  /* display: inline-flex; */
+  background-color: blue;
+}
+
+.item {
+  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  font-size: 30px;
+}
