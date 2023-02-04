@@ -1,0 +1,61 @@
+.view-first img {
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   background-color: rgba(219,127,8, 0.7);
+   transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+
+   transform: translateY(-100px);
+
+   filter: alpha(opacity=0);
+   opacity: 0;
+ 
+   transition: all 0.2s ease-in-out;
+}
+.view-first p {
+   
+   transform: translateY(100px);
+
+   filter: alpha(opacity=0);
+   opacity: 0;
+ 
+   transition: all 0.2s linear;
+}
+.view-first:hover img {
+  
+   transform: scale(1.1,1.1);
+}
+.view-first a.info {
+  
+   filter: alpha(opacity=0);
+   opacity: 0;
+
+   transition: all 0.2s ease-in-out;
+}
+.view-first:hover .mask {
+  
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+
+   filter: alpha(opacity=100);
+   opacity: 1;
+ 
+   transform: translateY(0px);
+}
+.view-first:hover p {
+
+   transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+
+   transition-delay: 0.2s;
+}
+				
