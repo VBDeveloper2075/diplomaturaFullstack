@@ -1,0 +1,28 @@
+.rectangulo {
+width: 80px;
+height: 80px;
+background-color: #5aaafc;
+
+animation-name: MiAnimacion;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+
+    }
+
+@keyframes MiAnimacion {
+    from {
+		font-size:0%;
+		margin-left:100%;
+    }
+
+    50% {
+		font-size:400%;
+    }
+
+    to {
+		font-size:400%;
+		margin-left:20%;
+		width:100%;
+    }
+}
+

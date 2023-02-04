@@ -1,0 +1,35 @@
+.demo .juego  {
+        list-style-type: none;
+        float: left;
+ }
+
+.juego {
+        width:200px;
+        padding:2em 1em 1em 1em;               
+        text-align: center;    
+        transition: all 3s ease;      
+}
+
+.juego img {
+        margin:auto;
+        display:block;  
+        transform: scale(0.9);
+        transition: all 2s ease; 
+}
+
+
+.juego:hover {
+        background-color: rgba(200,200,200,.5);
+        border-radius: 10px;
+        cursor: pointer;
+}
+      
+.juego:hover img {
+	transform: scale(1);     
+}  
+
+.juego:hover h2 {
+        color:#c9a833;         
+}
+	   
+	   
