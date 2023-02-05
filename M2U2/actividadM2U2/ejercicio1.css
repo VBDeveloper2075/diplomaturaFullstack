@@ -1,0 +1,64 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  width: 300px;
+  height: 306px;
+  border: blue 3px solid;
+  margin-top: 20px;
+}
+
+.b {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.c {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerc {
+  width: 600px;
+  height: 306px;
+  border: blue 3px solid;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.cuadro {
+  width: 100px;
+  height: 98px;
+  border: 2px black dotted;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rojo {
+  background-color: red;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.verde {
+  background-color: RGB(23, 177, 139);
+}
+
+.rojob {
+  background-color: red;
+}
+
+.azulb {
+  background-color: blue;
+}
+
+.verdeb {
+  background-color: RGB(23, 177, 139);
+}
