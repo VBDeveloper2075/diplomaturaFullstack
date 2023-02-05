@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  color: #000;
+  background: #332f29;
+  font-size: 100%;
+}
+#contenedor {
+  width: 800px;
+  background: #8fa68e;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+nav {
+  background: #cc3910;
+  float: left;
+  width: 160px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #f1f2c0;
+  text-decoration: none;
+}
+section {
+  background: #f1f2c0;
+  float: left;
+  margin: 0 0 0 25px;
+  width: 400px;
+}
+aside {
+  background: #ccc59e;
+  float: right;
+  width: 190px;
+}
+
+@media screen and (min-width: 230px) and (max-width: 800px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    padding: 5px;
+  }
+
+  section {
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+  }
+
+  #contenedor {
+    background: #8fa68f;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  nav {
+    background: #fc6;
+    width: 100%;
+    padding: 5px;
+  }
+
+  nav ul {
+    margin: 0;
+  }
+
+  nav ul li a {
+    padding: 0.5 em;
+  }
+
+  .container {
+    border-top: solid;
+    float: none;
+    padding: 0.9em;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  aside {
+    border-top: solid;
+    float: none;
+    padding: 5px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
