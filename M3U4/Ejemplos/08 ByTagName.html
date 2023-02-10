@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="caja1" style="border: solid blue 3px">
+        <p>parrafo 1 de la caja1</p>
+        <p>parrafo 2 de la caja 1</p>
+        <p>parrafo 3 de la caja 1</p>
+
+        <div id="caja2" style="border: solid red 3px">
+            <p>parrafo 1 de la caja2</p>
+            <p>parrafo 1 de la caja 2</p>
+        </div>
+    </div>
+    <p>parrafo 1 afuera</p>
+    <p>pararfo 2 afuera</p>
+
+    <button onclick="todosLosParrafos();">
+        muestra todos los elementos p en el documento</button>
+
+    <button onclick="caja1ParaElems();">
+        muestra todos los elementos p en div1</button>
+
+    <button onclick="caja2ParaElems();">
+        muestra todos los elementos p en div2</button>
+
+    <script>
+        function todosLosParrafos() {
+            const allParafos = document.getElementsByTagName("p");
+
+            const num = allParafos.length;
+
+            alert(`Hay ${num}  elementos <p> en este documento`);
+        }
+
+        function caja1ParaElems() {
+            var caja1 = document.getElementById("caja1")
+            var caja1parraf = caja1.getElementsByTagName("p");
+
+            var num = caja1parraf.length;
+
+            alert(`Hay ${num}  elementos <p> en caja1`);
+        }
+
+        function caja2ParaElems() {
+            var caja2 = document.getElementById("caja2")
+            var caja2parraf = caja2.getElementsByTagName("p");
+
+            var num = caja2parraf.length;
+
+            alert(`Hay ${num} elementos <p> en caja2`);
+        }
+
+    </script>
+</body>
+
+</html>

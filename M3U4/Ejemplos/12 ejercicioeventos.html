@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Formulario</h1>
+    <form action="/enviar" id="formulario">
+        <p>
+            <label>Nombre: <input name="nombre" type="text"></label>
+        </p>
+        <p>
+            <label>Mensaje: <textarea name="mensaje" cols="30" rows="10"></textarea></label>
+        </p>
+        <p>
+            <button>Enviar</button>
+        </p>
+    </form>
+
+    <script>
+    	 // formulario
+        const formulario = document.getElementById('formulario');
+        formulario.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if(e.currentTarget.nombre.value == '') {
+                alert('El campo nombre es requerido');
+                return;
+            }
+
+            if (e.currentTarget.mensaje.value == '') {
+                alert('El campo mensaje es requerido');
+                return;
+            }
+
+            alert(`Gracias ${e.currentTarget.nombre.value} por enviarnos 
+            ${e.currentTarget.mensaje.value} `);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script>
+
+function validarForm() {
+	const nombreValido = true;
+	const passWordValido = validarLargo(document.form1.text1.value, 5);
+
+	const resultado = nombreValido && passWordValido;
+	if (resultado) {
+		alert('es valido');
+	} else {
+		alert('NO es valido');
+	}
+}
+
+function validarLargo(texto, largoRequerido) {
+	return texto.length >= largoRequerido
+}
+</script>
+</head>
+
+<body>
+	<form name="form1">
+		Ingrese clave (al menos 5 caracteres): 
+		<input type="password" name="text1">
+		<input type="button" onclick="validarForm()" value="Enviar">
+	</form>
+</body>
+</html>

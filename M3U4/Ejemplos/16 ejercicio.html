@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="16_ejercicio.css">
+</head>
+<body>
+	<h3>Agregar y remover clases de CSS</h3>
+    <div class="cuadrado"></div>
+    <p>
+        <button class="boton" id="rojo">Rojo</button>
+        &nbsp;
+        <button class="boton" id="borde">Borde</button>
+        &nbsp;
+        <button class="boton" id="reset">Reset</button>
+    </p>
+
+    <script>
+        // CSS
+        const cuadrado = document.getElementsByClassName('cuadrado')[0];
+        const rojo = document.getElementById('rojo');
+        const borde = document.getElementById('borde');
+        const reset = document.getElementById('reset');        
+        
+        rojo.addEventListener('click', function() {
+            cuadrado.classList.add('rojo');
+        });
+
+        borde.addEventListener('click', function () {
+            cuadrado.classList.add('borde');
+        });
+
+        reset.addEventListener('click', function () {
+            cuadrado.classList.remove('rojo', 'borde');
+        });
+    </script>
+</body>
+</html>

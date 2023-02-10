@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    </head>
+
+    <body>
+    	<ul>
+    		<li class="item">Item 1</li>
+    		<li class="item">Item 2</li>
+    		<li class="item">Item 3</li>
+    		<li class="item">Item 4</li>
+    		<li class="item">Item 5</li>
+    	</ul>
+
+    	<button onclick="cambiarVisibilidad(1)">Cambiar visibility item 2</button>
+    	<button onclick="cambiarDisplay(3)">Cambiar display item 4</button>
+
+    	<script>
+    		const items = document.getElementsByClassName('item');
+    		function cambiarVisibilidad(numItem) {
+    			const item = items[numItem];
+    			if (item.style.visibility == '') {
+    				item.style.visibility = 'hidden';
+    			} else {
+    				item.style.visibility = '';
+    			}
+    		}
+
+    		function cambiarDisplay(numItem) {
+    			const item = items[numItem];
+    			if (item.style.display == '') {
+    				item.style.display = 'none';
+    			} else {
+    				item.style.display = '';
+    			}
+    		}
+    	</script>
+    </body>
+</html>
