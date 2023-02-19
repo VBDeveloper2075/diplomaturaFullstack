@@ -7,3 +7,67 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+
+header {
+  background-color: rgb(4, 91, 168);
+  padding: 16px;
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  /* con font font-weight le indico que tenga menos peso, es decir que sea más delgada la letra */
+  font-weight: 100;
+  font-style: italic;
+  display: inline-block;
+  /* le pongo posición relativa a la barra para después indicar que se mueva desde abajo 35 píxeles y se centre la palabra transportes x */
+  position: relative;
+  bottom: 35px;
+  /* para que se separe el logo del texto */
+  margin-left: 10px;
+}
+
+nav {
+  background-color: rgb(121, 163, 226);
+}
+
+nav ul {
+  list-style: none;
+  /* es para que se salgan los puntos de los li */
+  margin: 0;
+  padding: 0;
+  /* ahora pongo display flex para ordenar los botones uno al lado del otro, y el ul va a hacer las veces de un contenedor */
+  display: flex;
+}
+
+#logo {
+  width: 100px;
+}
+
+nav ul li {
+  /* esta propiedad separa los elementos del nav. hace que crezca el elemento de forma flexible (que se ajusta según la resolución) Se usa con el display flex*/
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  display: block;
+  text-align: center;
+}
+
+footer {
+  background-color: #ccc;
+  clear: both;
+  color: #333;
+  text-align: center;
+  padding: 50px 0;
+  /* margin top para separar el footer del div anterior */
+  margin-top: 20px;
+}
+
+nav ul li a.activo {
+  background-color: rgb(121, 163, 226);
+  /* le cambio el color al botón a, sólo al que tiene la clase activo */
+}
