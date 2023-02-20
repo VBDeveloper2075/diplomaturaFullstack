@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: rgb(4, 91, 168);
+  background-color: #207ce4;
   padding: 16px;
 }
 
@@ -68,6 +68,150 @@ footer {
 }
 
 nav ul li a.activo {
-  background-color: rgb(121, 163, 226);
+  background-color: #4c76a5;
   /* le cambio el color al botón a, sólo al que tiene la clase activo */
 }
+
+/* uso la clase holder para centrar el header, ul y main todo en el medio. No centro el footer porque ya está bien. Así logro que sea flexible. */
+.holder {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #2e64a1;
+  font-weight: 400;
+}
+
+/* --------  SECCION INICIO Home -------- */
+
+.bienvenidos {
+  width: 75%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  /* background-color: yellow; */
+}
+
+.testimonios {
+  width: 25%;
+  /* background-color: orange; */
+}
+
+.columnas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonio {
+  background-color: #ccc;
+  padding: 16px;
+}
+
+.testimonio .cita {
+  font-weight: bold;
+  font-style: 10 px;
+  font-size: 22px;
+  /* background-color: yellow; */
+  display: block;
+}
+
+.testimonio .autor {
+  font-size: 10px;
+  text-align: center;
+  /* background-color: lightcoral; */
+  /* display: block; */
+  margin: 12px 0;
+}
+
+/* --------  SECCION NOSOTROS -------- */
+
+.historia p {
+  font-size: 12px;
+}
+
+.personas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.persona {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 18%;
+  text-align: center;
+  padding: 13px;
+  box-sizing: border-box;
+  /* background-color: orange; */
+}
+
+.persona img {
+  border-radius: 50%;
+  max-width: 60%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.persona h5,
+.persona h6 {
+  margin: 0;
+  font-weight: normal;
+  color: #2e64a1;
+}
+
+.persona h5 {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.persona h6 {
+  font-size: 11px;
+  font-style: italic;
+}
+
+.persona p {
+  color: #666;
+  font-size: 10px;
+}
+/*  */
+/* --------  SECCION SERVICIOS -------- */
+
+.servicio {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  gap: 32px;
+  /* con align-items cuando la pantalla se achica la imagen no se deforma, sino que mantiene forma centrada en eje y */
+  align-items: center;
+}
+
+.servicio .info. h4 {
+  color: #2e64a1;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 1px solid #2e64a1;
+  padding-bottom: 10px;
+}
+
+.servicio .info p {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.servicio img {
+  border-radius: 13px;
+  display: block;
+  max-width: 225px;
+}
+
+.servicio:nth-child(even) {
+  /* para que la imagen del medio vaya a la derecha
+ cambio la dirección de los elementos - a los hijos pares - uso pseudoclase*/
+  flex-direction: row-reverse;
+}
+
+/* --------  SECCION GALERIA -------- */
+
+/* --------  SECCION NOVEDADES -------- */
+
+/* --------  SECCION CONTACTO -------- */
