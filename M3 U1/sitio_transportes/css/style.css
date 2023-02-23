@@ -211,7 +211,69 @@ h2 {
 }
 
 /* --------  SECCION GALERIA -------- */
+/* qiero que sean 5 imágenes por renglón, que haya desbordamiento. luego colocar un borde */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.galeria img {
+  width: 18%;
+  border: 1px solid red;
+  padding: 0.3em;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-right: 2%;
+}
 /* --------  SECCION NOVEDADES -------- */
 
 /* --------  SECCION CONTACTO -------- */
+.contacto {
+  display: flex;
+  gap: 24px;
+}
+
+.contacto div {
+  width: 100;
+}
+
+.datos p {
+  font-size: 14px;
+}
+
+.datos ul li {
+  font-size: 13px;
+}
+
+.formulario p {
+  display: flex;
+}
+
+.formulario p label {
+  min-width: 80px;
+  /* background-color: yellow; para ubicar dentro de esta caja el texto en el centro*/
+  display: flex;
+  align-items: center;
+}
+
+.formulario p input .formulario p textarea {
+  width: 100%;
+  background: #ddd;
+  border-radius: 5p;
+  border: 1px solid #999;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+/* para que no se agrande de cualquier forma el textarea lo limito y cuando se pasa del borde aparece el scroll por defecto y se puede seguir escribiendo igual */
+
+.formulario textarea{
+  resize: none;
+  height: 150px;
+}
+
+/* esto de [type="submit] se hace para no tener que poner otra clase a esa parte del formulario. Directamente digo que: al input del formulario que es del tipo submit le realice "x" cambio */
+.formulario input [type="submit]{
+  
+}
