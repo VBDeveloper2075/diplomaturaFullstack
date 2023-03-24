@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1 JS</title>
+  </head>
+  <body>
+    <script>
+      let distancia = parseInt(
+        prompt("Ingrese la distancia hasta su destino: ")
+      );
+
+      if (distancia > 0 && distancia <= 1000) {
+        document.write(`Te recomendamos ir a pie`);
+      } else if (distancia > 1000 && distancia <= 10000) {
+        document.write(`Te recomendamos ir a en bici`);
+      } else if (distancia > 10000 && distancia <= 30000) {
+        document.write(`Te conviene tomar un colectivo`);
+      } else if (distancia > 30000 && distancia <= 100000) {
+        document.write(`Te recomendamos ir a en auto`);
+      } else if (distancia > 100000) {
+        document.write(`Te conviene tomar un avión`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2 JS</title>
+  </head>
+  <body>
+    <script>
+            let input;
+            let cont = [];
+
+            while (input !== "stop") {
+              input = prompt("ingrese dato:");
+              if (input !== "stop") {
+                cont.push(input);
+      let cont = "";
+              let n, i, k, aux;
+              n = cont.length;
+              for (k = 1; k < n; k++) {
+                for (i = 0; i < n - k; i++) {
+                  if (cont[i] > cont[i + 1]) {
+                    aux = cont[i];
+                    cont[i] = cont[i + 1];
+                    cont[i + 1] = aux;
+                  }
+                }
+              }
+
+            }
+
+            document.write(cont);
+
+            function burbuja() {
+              let cont = "";
+              let n, i, k, aux;
+              n = cont.length;
+              for (k = 1; k < n; k++) {
+                for (i = 0; i < n - k; i++) {
+                  if (cont[i] > cont[i + 1]) {
+                    aux = cont[i];
+                    cont[i] = cont[i + 1];
+                    cont[i + 1] = aux;
+                  }
+                }
+              }
+
+              document.write(cont); // Mostramos, por consola, la lista ya ordenada
+            }
+
+            burbuja();
+            document.write(cont[4]);
+    </script>
+  </body>
+</html>
