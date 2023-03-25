@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Link</h1>
+    <a id="link" href="https://developer.mozilla.org">Mozilla Developer Network</a>
+
+    <script>
+    	 // link
+        const link = document.getElementById('link');
+        link.addEventListener('click', function(e) {
+            // evitar que el link funcione
+            e.preventDefault();
+            alert('Quisiste ir a: ' + e.currentTarget.href);
+        });
+    </script>
+</body>
+</html>

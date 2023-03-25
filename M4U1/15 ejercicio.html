@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="15_ejercicio.css">
+</head>
+<body>
+    <h3>Alternar clases de CSS</h3>
+    <p>
+        <button class="boton alternar">Cambia mi estilo</button>
+    </p>
+    <script>
+        // CSS
+        const alternar = document.getElementsByClassName('alternar')[0];          
+         
+        /**
+         * classList representa la lista de clases asignadas a un elemento
+         * toggle nos permite "prender" o "apagar" una clase en un objeto
+         * add agrega la clase o clases que le pasemos
+         * remove remueve la clase o clases que le pasemos
+         */
+        alternar.addEventListener('click', function(e) {
+            e.currentTarget.classList.toggle('activo');
+        });
+   	
+    </script>
+</body>
+</html>
+
+
+

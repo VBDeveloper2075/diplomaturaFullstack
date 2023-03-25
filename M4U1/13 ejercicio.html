@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Crear y eliminar elementos</h1>
+    <ul id="lista">
+        <li>Item <a href="#">X</a></li>
+        <li>Item <a href="#">X</a></li>
+        <li>Item <a href="#">X</a></li>
+    </ul>
+    <a href="#" class="agregar">Agregar</a>
+
+
+    <script>
+
+    // lista
+        const lista = document.getElementById('lista');
+        /**
+         * los eventos de la lista recorren para todos los hijos
+         * en este caso queremos que se cliquee  cualquier <a> adentro de la lista y como los vamos a agregar y remover dinamicamente no es practico
+         * asignar un listener a cada <a>
+         * 
+         */
+            
+        lista.addEventListener('click', function(e) {
+            console.log('click en lista');
+            // checkear si se clickeo un <a>
+            if(e.target.nodeName.toLowerCase() === 'a') {
+                e.preventDefault();
+                e.target.parentNode.remove();
+            }
+        });
+    	
+    	/**
+         * getElementsByClassName busca por clase pero devuelve un array
+         * por eso, sabiendo que tenemos solo 1, usamos el 0 para agarrar el 1ro
+         */
+        const agregar = document.getElementsByClassName('agregar')[0];
+
+        function agregarElemento(e) {
+            e.preventDefault();
+            // creamos el elemento
+            const nuevo = document.createElement('li');
+            // le asignamos el texto
+            nuevo.innerHTML = 'Item ';
+
+            const x = document.createElement('a');
+            // sin el href no lo muestra como link
+            x.href = '#';
+            x.innerText = 'X';
+
+            // agregamos el <a> al <li>
+            nuevo.appendChild(x);
+
+            // agregamos el <li> al <ul>
+            lista.appendChild(nuevo);
+        }
+
+        // podemos pasar una funcion en vez de definirla de forma anonima
+        agregar.addEventListener('click', agregarElemento);
+    </script>
+</body>
+</html>

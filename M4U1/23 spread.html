@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+    //El operador spread (...) sirve para obtener todas las propiedades de un objeto o los elementos de un array
+     let a, b, rest;
+     [a, b] = [10, 20];
+     console.log(a); // 10
+     console.log(b); // 20
+
+     [a, b, ...rest] = [10, 20, 30, 40, 50];
+     console.log(rest); // [30,40,50]   
+ 
+     const vocales = ['a', 'e', 'i'];
+     const vocalesCompletas = [...vocales, 'o', 'u'];
+        console.log(vocales); // ['a', 'e', 'i']
+        console.log(vocalesCompletas); // ['a', 'e', 'i', 'o', 'u']
+    </script>
+
+
+
+</body>
+
+</html>
