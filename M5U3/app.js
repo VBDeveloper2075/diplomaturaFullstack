@@ -35,12 +35,12 @@ pool.query("select *from empleados").then(function(resultados){
 });
 
 // INSERT
-// var pool= require('./bd');
+var pool= require('./models/bd');
 
-// var obj= {
-//   nombre: 'Juan',
-//   apellido: 'Lopez'
-// }
+var obj= {
+  nombre: 'Juan',
+  apellido: 'Lopez'
+}
 
 // pool.query("insert into empleados set ?", [obj]).then(function(resultados){
 //   console.log(resultados);
