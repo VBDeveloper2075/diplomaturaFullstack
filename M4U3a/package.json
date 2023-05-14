@@ -1,0 +1,17 @@
+{
+  "name": "m4u3a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "jquery": "^3.6.4",
+    "moment": "^2.29.4",
+    "momento": "^0.2.0"
+  }
+}
