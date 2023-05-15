@@ -28,26 +28,26 @@ app.use('/users', usersRouter);
 /*    CONSULTAS A LA BASE DE DATOS    */
 
 // SELECT
-var pool= require('./bd');
+var pool= require('./models/bd');
 
 pool.query("select *from empleados").then(function(resultados){
   console.log(resultados);
 });
 
 // INSERT
-var pool= require('./models/bd');
+// var pool= require('./models/bd');
 
-var obj= {
-  nombre: 'Juan',
-  apellido: 'Lopez'
-}
+// var obj= {
+//   nombre: 'Juan',
+//   apellido: 'Lopez'
+// }
 
 // pool.query("insert into empleados set ?", [obj]).then(function(resultados){
 //   console.log(resultados);
 // });
 
 // UPDATE
-// var pool= require('./bd');
+// var pool= require('./models/bd');
 
 // var id= 1;
 // var obj= {
@@ -60,7 +60,7 @@ var obj= {
 // });
 
 // DELETE
-// var pool= require('./bd');
+// var pool= require('./models/bd');
 
 // var id= 2;
 
